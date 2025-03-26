@@ -40,7 +40,7 @@ const upload = multer({
 //  상품 등록 후 고객 페이지에 데이터 변경 알림
 export const notifyCustomerServer = async () => {
     try {
-        await axios.post('http://localhost:9000/product/update'); // 고객 서버에 변경 요청
+        await axios.post('http://52.78.224.175:9000/product/update'); // 고객 서버에 변경 요청
         console.log(" 고객 서버에 상품 업데이트 알림 완료");
     } catch (error) {
         console.error("ERROR 고객 서버 업데이트 알림 실패:", error);
