@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 server.use(cors({
-    origin: ['http://ssf-client.s3-website.ap-northeast-2.amazonaws.com/', 'http://ssf-admin-client.s3-website.ap-northeast-2.amazonaws.com'], // 고객 & 관리자 페이지
+    origin: ['http://ssf-client.s3-website.ap-northeast-2.amazonaws.com', 'http://ssf-admin-client.s3-website.ap-northeast-2.amazonaws.com'], // 고객 & 관리자 페이지
     credentials: true
 }));
 
