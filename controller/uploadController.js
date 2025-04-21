@@ -106,7 +106,7 @@ export const fileUploadMultiple = (req, res) => {
             //  업로드된 파일 정보 저장
             let uploadFileName = [];
             for (const file of req.files) {
-                uploadFileName.push(`http://3.36.70.100:9001/uploads/${file.filename}`);
+                uploadFileName.push(`http://3.39.232.155:9001/uploads/${file.filename}`);
                 // 클라이언트에서 이미지를 표시할 때 사용할 URL을 미리 만들어줌 (ex: "http://localhost:9001/uploads/image1.jpg") -> 배포 주소로 바꿈
             }
 
