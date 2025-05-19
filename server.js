@@ -100,5 +100,5 @@ export const notifyOrderUpdate = (oid, status, isGuest = false) => {
 
 
 server.listen(port, () => {
-    console.log(`관리자 서버 실행 중: http://localhost:${port}`);
+    console.log(`관리자 서버 실행 중: http://54.180.88.216:${port}`);
 });

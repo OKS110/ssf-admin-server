@@ -40,7 +40,7 @@ const upload = multer({
 //  상품 등록 후 고객 페이지에 데이터 변경 알림
 export const notifyCustomerServer = async () => {
     try {
-        await axios.post('http://52.78.224.175:9000/product/update'); // 고객 서버에 변경 요청
+        await axios.post('http://54.180.88.216:9000/product/update'); // 고객 서버에 변경 요청
         console.log(" 고객 서버에 상품 업데이트 알림 완료");
     } catch (error) {
         console.error("ERROR 고객 서버 업데이트 알림 실패:", error);
@@ -106,7 +106,7 @@ export const fileUploadMultiple = (req, res) => {
             //  업로드된 파일 정보 저장
             let uploadFileName = [];
             for (const file of req.files) {
-                uploadFileName.push(`http://3.34.134.163:9001/uploads/${file.filename}`);
+                uploadFileName.push(`http://54.180.88.216:9001/uploads/${file.filename}`);
                 // 클라이언트에서 이미지를 표시할 때 사용할 URL을 미리 만들어줌 (ex: "http://localhost:9001/uploads/image1.jpg") -> 배포 주소로 바꿈
             }
 
